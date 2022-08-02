@@ -3,11 +3,11 @@
 
 https://juejin.cn/post/7063321486135656479
 
-1、React16启用了全新的架构，叫做Fiber 不是直接渲染 vdom 了，而是先转成 fiber , 也就是vdom 树 => fiber 链表
+1、React16启用了全新的架构，叫做Fiber 不直接渲染vdom，而是先转成fiber , 也就是vdom 树 => fiber 链表
 2、链表结构可打断
 3、16.8后基于fiber推出hooks
-4、 React 16 之前通过React.creatElement生成虚拟dom 然后递归虚拟dom树生成真实的dom(React.render)
-5、fiber的三大过长
+4、React 16 之前通过React.creatElement生成虚拟dom 然后递归虚拟dom树生成真实的dom(React.render)
+5、fiber的三大过程
 
 schedule、reconcile、commit
 
