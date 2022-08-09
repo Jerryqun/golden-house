@@ -31,3 +31,11 @@ function a() {
     obj1.a = obj2
 }
 a()
+
+/**
+ * 浅拷贝 用结构赋值或者slice
+ */
+
+let arr = [1,2,3,4]
+let arrClone = arr.slice()
+let arrClone1 = [...arr]

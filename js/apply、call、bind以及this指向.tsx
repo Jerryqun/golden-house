@@ -61,6 +61,10 @@ Function.prototype.my_apply = function (context = window, args) {
 }
 
 test.fn.my_apply(target, [1, 2, 3])
+// apply 参数妙用 可以使push unshift传数组 
+let a = [1,2,3]
+let b = [4,5,6]
+Array.prototype.unshift.my_apply(a,b)
 
 /**手写bind */
 
