@@ -19,9 +19,10 @@ Promise.myAll = function (value) {
         count += 1
         result[i] = res
         if (count === value.length) {
-          return result
+          re(result)
         }
       }).catch(error => rj(error))
     }
+    
   })
 }
