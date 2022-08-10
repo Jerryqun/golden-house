@@ -35,21 +35,21 @@
 // 加法解决(plus)
 import BigNumber from 'bignumber.js';
 const x = new BigNumber(0.1);
-const y = BigNumber(0.2);
+const y = new BigNumber(0.2);
 const sum = x.plus(y);
 console.log('sum: ', sub.toString())
 
 // 减法解决(minus)
 import BigNumber from 'bignumber.js';
 const x = new BigNumber(1.5);
-const y = BigNumber(1.2);
+const y = new BigNumber(1.2);
 const reduce = x.minus(y);
 console.log('reduce: ', reduce.toString())
 
 // 乘法解决(multipliedBy)
 import BigNumber from 'bignumber.js';
 const x = new BigNumber(19.9);
-const y = BigNumber(100);
+const y = new BigNumber(100);
 const multipliedBy = x.multipliedBy(y);
 console.log('multipliedBy: ', multipliedBy.toString()); // 1990
 
@@ -57,7 +57,7 @@ console.log('multipliedBy: ', multipliedBy.toString()); // 1990
 // 除法解决(dividedBy)
 import BigNumber from 'bignumber.js';
 const x = new BigNumber(0.3);
-const y = BigNumber(0.1);
+const y = new BigNumber(0.1);
 const dividedBy = x.dividedBy(y);
 console.log('mod: ', dividedBy.toString());  // 3
 
