@@ -33,7 +33,7 @@ function a() {
 a()
 
 /**
- * 浅拷贝 用结构赋值或者slice
+ * 浅拷贝 用结构赋值或者sliceh或concat();
  */
 
 let arr = [1,2,3,4]
