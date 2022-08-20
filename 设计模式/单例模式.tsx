@@ -10,7 +10,9 @@
 let instance = null
 function getSingleInstance(fn) {
     if (!instance) {
-        return this
+        console.log('this',this)
+        instance =  this
+        return instance 
     }
     return instance
 }
@@ -24,7 +26,7 @@ ins1 === ins2  // true
  * 第二种惰性版本 （单例模式调用的时候才会生成实例）
  */
 
-const getSingle = function (fn) {
+const CreateSingleV1 = function (fn) {
     let result
     return function () {
         return result || (result = fn.apply(this, arguments))
