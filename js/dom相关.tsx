@@ -8,3 +8,8 @@
  * 元素距离上边的距离
  * document.getElementById("div").offsetTop
  */
+
+
+/**
+ * Element.getBoundingClientRect() 方法返回一个 DOMRect 对象，其提供了元素的大小及其相对于视口的位置。
+ */
