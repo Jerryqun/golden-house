@@ -6,3 +6,4 @@ Context 语境
 execution 执行 
 lexical 词汇
 variable 变量
+inherit 继承
