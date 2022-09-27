@@ -1,9 +1,13 @@
-Overview  概述
-Rename  重命名
+overview  概述
+rename  重命名
 consistent 持续的
 guide  指导、引导
-Context 语境
+context 语境
 execution 执行 
 lexical 词汇
 variable 变量
 inherit 继承
+whether 无论
+builtins 内置
+handle 处理
+combine 结合
