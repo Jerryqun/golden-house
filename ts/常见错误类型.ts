@@ -14,6 +14,12 @@ const RedisStore = new (Redis as any)({
 /**
  * 【TS】元素隐式具有 "any" 类型，因为类型为 "string" 的表达式不能用于索引类型
 举例
+或直接忽略错误 tsconfig.json文件增加配置
+{
+  "compilerOptions": {
+    "suppressImplicitAnyIndexErrors": true,
+  }
+}
  */
 
 export const formatDateType = {

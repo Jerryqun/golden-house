@@ -13,6 +13,12 @@ console.log(str1.startsWith("Sat"));
 console.log(str1.startsWith("Sat", 3));
 // expected output: false
 
+/**手机号中间变成* */
+const telFormat = (tel) => {
+  const telStr = `${tel}`;
+  return `${telStr.slice(0, 3)}****${telStr.slice(7)}`;
+};
+
 /**
  * 数组的赋值是引用指针拷贝
  * 依次打印

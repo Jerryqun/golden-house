@@ -1,4 +1,6 @@
-参考链接： https://zhuanlan.zhihu.com/p/25184390
+参考链接：
+https://zhuanlan.zhihu.com/p/25184390
+https://www.ruanyifeng.com/blog/2018/07/web-worker.html
 
 Web Worker 提供的多线程编程能力并不像我们传统意义上的多线程编程，它不像其他的多线程语言(Java、C++ 等)，主程序线程和 Worker 线程之间，Worker 线程之间，不会共享任何作用域或资源，他们间唯一的通信方式就是一个基于事件监听机制的 message
 
@@ -30,7 +32,7 @@ Web Worker 的实现为前端程序带来了后台计算的能力，可以实现
 使用
 实例化运行一个 Worker 很简单，我们只需要 `new` 一个 `Worker` 全局对象即可：`new Worker(filepathname)`， 接受一个 filepathname String 参数，用于指定 Worker 脚本文件的路径；
 
-// main.js
+// main.js (它所加载的脚本，必须来自网络)
 var worker = new Worker('./worker.js');
 
 数据通信
@@ -69,5 +71,11 @@ onmessage = function (e) {
 终止 worker
 var worker = new Worker('./worker.js');
 worker.terminate();
+
+
+
+
+
+
 
 

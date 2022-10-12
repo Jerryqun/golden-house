@@ -11,3 +11,6 @@ whether 无论
 builtins 内置
 handle 处理
 combine 结合
+risk 风险
+operation 操作
+insecure 不安全
