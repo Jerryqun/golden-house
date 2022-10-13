@@ -60,3 +60,10 @@ export default counter;
 import myCounter from "./counter.js";
 myCounter += 1;
 console.log(myCounter); // Error
+
+/**
+ * js bug
+ *
+ */
+
+parseInt(0.0000006); // 6
