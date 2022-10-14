@@ -19,6 +19,14 @@ const telFormat = (tel) => {
   return `${telStr.slice(0, 3)}****${telStr.slice(7)}`;
 };
 
+/**把多个空格替换成一个 */
+const repspace = (str) => str.replace(/\s+/g, " ");
+
+/**字符串转数组 */
+"123abc".split("");
+const s = [..."123abc"];
+const [...chars] = "123abc";
+
 /**
  * 数组的赋值是引用指针拷贝
  * 依次打印

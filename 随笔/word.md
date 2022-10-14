@@ -14,3 +14,7 @@ combine 结合
 risk 风险
 operation 操作
 insecure 不安全
+bridge 桥梁
+terminal 终端 
+normal 普通的
+special 特殊
