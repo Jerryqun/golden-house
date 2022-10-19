@@ -1,3 +1,5 @@
+安装cnpm:输入npm install -g cnpm -registry=https://registry.npm.taobao.org
+
 node有一个模块n，是专门用来管理node.js的版本的。
 
 1、全局安装n模块

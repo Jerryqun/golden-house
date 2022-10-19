@@ -18,3 +18,7 @@ bridge 桥梁
 terminal 终端 
 normal 普通的
 special 特殊
+force 强制 力量
+prefix 字首、前缀
+reference 参照、参考
+valid 有效的

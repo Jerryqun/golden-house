@@ -75,3 +75,22 @@ console.log(myCounter); // Error
  */
 
 parseInt(0.0000006); // 6
+
+/**
+ * js 获取用户选中的文本
+ */
+
+const getSelectedText = () => window.getSelection()?.toString();
+
+/**
+ * 字符串反转
+ */
+
+const reverseStr = (str) => str.split("").reverse().join("");
+
+/**
+ * padStart(16,'0') 不足16位在前面补齐0 到16位
+ * padEnd(16,'0')  不足16位在后面补齐0 到16位
+ */
+"1".padEnd(16, 0); //1000000000000000
+"1".padStart(16, 0); //0000000000000001
