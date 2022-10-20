@@ -89,8 +89,50 @@ const getSelectedText = () => window.getSelection()?.toString();
 const reverseStr = (str) => str.split("").reverse().join("");
 
 /**
+ * 不会改变原来的值
  * padStart(16,'0') 不足16位在前面补齐0 到16位
  * padEnd(16,'0')  不足16位在后面补齐0 到16位
  */
 "1".padEnd(16, 0); //1000000000000000
 "1".padStart(16, 0); //0000000000000001
+
+/**
+ * 拷贝
+ * ...相当于new了一个新对象 不会对原来对象产生影响
+ */
+const person = { name: "cq" };
+const cq = person;
+cq.name = "yl";
+console.log(person); //'yl'
+const dd = { ...person };
+dd.name = "dd";
+console.log(person); // 'cq'
+
+/**
+ * 一元加号会尝试讲boolean类型转换为数字
+ */
+
++true; //1
++false; //0
+
+/**
+ * genterator 函数
+ * 在遇到yield关键字时会暂停其执行
+ * next方法可以携带一个参数， 该参数会被当做上一个yield表达式的返回值
+ */
+
+/**
+ * 字符串代码执行
+ */
+
+const str = "console.log(520)";
+const fn = Function(str);
+fn(); // 520
+
+const safeEval = (code: string) => {
+  try {
+    return Function(code)();
+  } catch (error) {
+    console.log("safeEval error info", error);
+  }
+};
