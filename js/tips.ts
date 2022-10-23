@@ -136,3 +136,40 @@ const safeEval = (code: string) => {
     console.log("safeEval error info", error);
   }
 };
+
+/**
+ * 给一个属组增加属性
+ */
+
+const a = [1, 3, 4, 4];
+a.count = 1;
+console.log(a); //[1, 3, 4, 4,count:1];
+
+/**
+ * 缩写
+ */
+let x = (y = 2);
+// 相当于  y = 2 ;let x = y
+//  y = 2相当于给window上挂了一个全局属性 y
+
+/** 结构对象 */
+
+const a = { name: "1112" };
+const b = { ...a };
+console.log("b", b); //  { name: "1112" };
+a.age = 12;
+console.log("b", b); //  { name: "1112" };
+
+const c = a;
+console.log(c); //  { name: "1112", age: 12 };
+
+/**
+ * 暂时性死区
+ */
+
+let name = "cq";
+function getName() {
+  console.log(name);
+  let name = "yl";
+}
+getName(); // ReferenceError
