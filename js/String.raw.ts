@@ -7,7 +7,7 @@ const mobilePhoneReg = /^1[345789]\d{9}$/;
 
 mobilePhoneReg.test(13546565643); // true
 
-const reg = new RegExp("^1[345789]d{9}$");
+const reg = new RegExp("^1[345789]\d{9}$");
 reg.test(13546565643); //false
 
 const regObj = new RegExp(String.raw(`1[345789]\d{9}$`));
