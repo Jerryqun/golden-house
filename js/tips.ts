@@ -173,3 +173,10 @@ function getName() {
   let name = "yl";
 }
 getName(); // ReferenceError
+
+/**
+ * parseInt
+ *  遇到不是number类型的值时会立即中断 并且返回已解析的值
+ */
+
+const num = parseInt("7*6", 10); // 7
