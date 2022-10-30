@@ -24,3 +24,5 @@ n rm xx.xx.x
 7、指定版本来运行脚本
 n use xx.xx.xx a.js
 
+ 之前项目稳定版本v14.17.0
+
