@@ -23,5 +23,5 @@ prefix 字首、前缀
 reference 参照、参考
 valid 有效的
 parse 解析
-Syntax 句法
-Circular dependency 循环依赖
+syntax 句法
+circular dependency 循环依赖
