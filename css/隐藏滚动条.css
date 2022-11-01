@@ -1,0 +1,11 @@
+.classname::-webkit-scrollbar {
+  display: none;
+  /*Safari*/
+}
+
+.classname {
+  scrollbar-width: 0;
+  /* firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}

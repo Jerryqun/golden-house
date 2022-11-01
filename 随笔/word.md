@@ -24,3 +24,4 @@ reference 参照、参考
 valid 有效的
 parse 解析
 Syntax 句法
+Circular dependency 循环依赖
