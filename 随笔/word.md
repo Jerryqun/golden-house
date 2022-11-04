@@ -27,4 +27,5 @@ syntax 句法
 circular dependency 循环依赖
 passphrase 密码; 私钥密码; 密语; 口令短语; 通行码;
 middleware 中间件
+race 种族 赛跑
 
