@@ -29,4 +29,5 @@ passphrase 密码; 私钥密码; 密语; 口令短语; 通行码;
 middleware 中间件
 race 种族 赛跑
 shape 形状
-
+iterator  迭代器
+ 

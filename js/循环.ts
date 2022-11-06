@@ -59,6 +59,6 @@ for (let item of list) {
     1.for-in只是获取数组的索引或者对象的key；而for-of会获取数组的值
     2.for-in会遍历对象的整个原型链，性能差；而for-of只遍历当前对象，不会遍历原型链
     3.对于数组的遍历，for-in会返回数组中所有可枚举的属性(包括原型链上可枚举的属性)；for-of只返回数组的下标对应的属性值
-    4.for-of适用遍历数组／字符串/map/set等有迭代器对象的集合，但是不能遍历普通对象（obj is not iterable）
+    4.for-of适用遍历数组／字符串/map/set等有迭代器Iterator对象的集合，但是不能遍历普通对象（obj is not iterable）
  * 
  */
