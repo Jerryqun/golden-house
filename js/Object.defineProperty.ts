@@ -20,3 +20,12 @@ object1.property1 = 77;
 // throws an error in strict mode
 console.log(object1.property1);
 // expected output: 42
+
+/**
+ *  configurable 是否可以删除属性和属性描述
+    enumerable 才能出现在对象枚举中
+    value 初始值
+    writable 是否能被赋值运算符改变
+    get
+    set
+ */

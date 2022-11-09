@@ -114,6 +114,7 @@ console.log(person); // 'cq'
 
 +true; //1
 +false; //0
++"1"; // 1 typeof +'1'  = 'number'
 
 /**
  * genterator 函数
