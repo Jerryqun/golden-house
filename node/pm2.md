@@ -4,3 +4,7 @@ pm2 部署node服务实例
 
 https://blog.csdn.net/qq_32445707/article/details/120898799
 
+删除某个服务
+
+pm2 delete id
+
