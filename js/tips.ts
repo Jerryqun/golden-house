@@ -139,7 +139,7 @@ const safeEval = (code: string) => {
 };
 
 /**
- * 给一个属组增加属性
+ * 给一个数组增加属性
  */
 
 const a = [1, 3, 4, 4];
