@@ -30,4 +30,5 @@ middleware 中间件
 race 种族 赛跑
 shape 形状
 iterator  迭代器
+deprecate 弃用
  
