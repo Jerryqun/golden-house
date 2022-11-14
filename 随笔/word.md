@@ -31,4 +31,7 @@ race 种族 赛跑
 shape 形状
 iterator  迭代器
 deprecate 弃用
+summary 概况
+nested 嵌套的
+via 通过
  
