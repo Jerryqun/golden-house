@@ -7,6 +7,7 @@ Date.now(); // 当前时间 时间戳
 dayjs("1995-12-25"); // 1995-12-25
 dayjs(Date.now() - 24 * 60 * 60 * 1000); // 昨天
 
+// 返回修改后的值 本身也会被修改
 dayjs().add(7, "days"); // 之后的第7天
 dayjs().subtract(1, "months"); // 上个月
 dayjs().startOf("months"); // 获取一月初

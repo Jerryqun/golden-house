@@ -34,4 +34,9 @@ deprecate 弃用
 summary 概况
 nested 嵌套的
 via 通过
+capture 捕获
+awesome 惊人的
+plugins 插件
+falls down  摔倒
+in essence 本质上
  
