@@ -8,7 +8,7 @@ CSRF（Cross-site request forgery）跨站请求伪造：攻击者诱导受害�
 
 1、受害者登录a.com，并保留了登录凭证（Cookie）。
 2、攻击者引诱受害者访问了b.com。
-3、b.com 向 a.com 发送了一个请求：a.com/act=xx。浏览器会…
+3、b.com 向 a.com 发送了一个请求：a.com/act=xx。
 4、a.com接收到请求后，对请求进行验证，并确认是受害者的凭证，误以为是受害者自己发送的请求。
 5、a.com以受害者的名义执行了act=xx。
 6、攻击完成，攻击者在受害者不知情的情况下，冒充受害者，让a.com执行了自己定义的操作。
