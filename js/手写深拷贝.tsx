@@ -1,41 +1,42 @@
 /**
- * @param target 
- * @param result 
- * @returns 
+ * @param target
+ * @param result
+ * @returns
  */
 
- function deepClone(target, map = new WeakMap(), result = {}) {
-    // 克隆原始类型 直接返回
-    if (Object.prototype.toString.call(target) !== '[object Object]') {
-        return target
+function deepClone(target, map = new WeakMap(), result = {}) {
+  // 克隆原始类型 直接返回
+  if (Object.prototype.toString.call(target) !== "[object Object]") {
+    return target;
+  }
+  // 防止循环引用
+  if (map.get(target)) {
+    return target;
+  }
+  map.set(target, result);
+  Object.keys(target).map((key) => {
+    result[key] = target[key];
+    if (Object.keys(target[key]).length) {
+      deepClone(result[key], map, result[key]);
     }
-    // 防止循环引用
-    if (map.get(target)) {
-        return target
-    }
-    map.set(target, result)
-    Object.keys(target).map(key => {
-        result[key] = target[key]
-        if (Object.keys(target[key]).length) {
-            deepClone(result[key], map, result[key])
-        }
-    })
-    return result
+  });
+  return result;
 }
 /**
  * 循环引用
  */
 function a() {
-    let obj1 = {}
-    let obj2 = { c: obj1 }
-    obj1.a = obj2
+  let obj1 = {};
+  let obj2 = { c: obj1 };
+  obj1.a = obj2;
+  return obj2;
 }
-a()
+a();
 
 /**
  * 浅拷贝 用结构赋值或者sliceh或concat();
  */
 
-let arr = [1,2,3,4]
-let arrClone = arr.slice()
-let arrClone1 = [...arr]
+let arr = [1, 2, 3, 4];
+let arrClone = arr.slice();
+let arrClone1 = [...arr];

@@ -27,7 +27,7 @@ syntax 句法
 circular dependency 循环依赖
 passphrase 密码; 私钥密码; 密语; 口令短语; 通行码;
 middleware 中间件
-race 种族 赛跑
+race  赛跑 种族
 shape 形状
 iterator  迭代器
 deprecate 弃用
@@ -39,4 +39,5 @@ awesome 惊人的
 plugins 插件
 falls down  摔倒
 in essence 本质上
+abstract 抽象的
  
