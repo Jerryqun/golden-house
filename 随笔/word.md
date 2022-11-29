@@ -40,4 +40,7 @@ plugins 插件
 falls down  摔倒
 in essence 本质上
 abstract 抽象的
+directly 直接的
+recommended 建议
+Kill 杀死
  
