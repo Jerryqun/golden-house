@@ -4,7 +4,9 @@ ls           //查看文件夹下内容
 ssh-keygen -t rsa -C "用户邮箱"
 再cd ~/.ssh  查找公钥
 cat ~/.ssh/id_rsa.pub
-1
+
+
+
 https://www.jianshu.com/p/1c3cadc68b4b
 
 
