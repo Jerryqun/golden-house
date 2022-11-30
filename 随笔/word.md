@@ -46,4 +46,6 @@ Kill 杀死
 pagation 分页
 propagation  传播
 prevent 阻止 防止
+static 静止的
+sticky 黏
  
