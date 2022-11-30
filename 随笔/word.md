@@ -43,4 +43,7 @@ abstract 抽象的
 directly 直接的
 recommended 建议
 Kill 杀死
+pagation 分页
+propagation  传播
+prevent 阻止 防止
  
