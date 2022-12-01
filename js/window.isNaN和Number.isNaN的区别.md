@@ -8,3 +8,5 @@ window.isNaN('abc') // true
 window.isNaN(1) // false
 window.isNaN('1212')  // false
 
+判断是否为数字用window.isNaN
+

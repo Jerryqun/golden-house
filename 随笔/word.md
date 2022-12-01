@@ -48,4 +48,5 @@ propagation  传播
 prevent 阻止 防止
 static 静止的
 sticky 黏
+passive 被动的
  
