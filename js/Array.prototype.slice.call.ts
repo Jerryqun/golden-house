@@ -5,7 +5,7 @@
  */
 
 function test(a, b, c, d) {
-  var arg = Array.prototype.slice.call(arguments, 1);
+  var arg = Array.prototype.slice.call(arguments, 0);
   console.log(arg);
 }
-test("a", "b", "c", "d"); //b,c,d
+test("a", "b", "c", "d"); //a,b,c,d
