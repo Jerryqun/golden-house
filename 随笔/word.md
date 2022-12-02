@@ -49,4 +49,7 @@ prevent 阻止 防止
 static 静止的
 sticky 黏
 passive 被动的
+binary 二进制
+buffer 缓冲
+abort 中止
  
