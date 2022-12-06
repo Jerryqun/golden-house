@@ -1,6 +1,7 @@
+//es6.ruanyifeng.com/#docs/module-loader#ES6-%E6%A8%A1%E5%9D%97%E4%B8%8E-CommonJS-%E6%A8%A1%E5%9D%97%E7%9A%84%E5%B7%AE%E5%BC%82
 //1、CommonJS 导出的是值的拷贝,ES模块导出的是值的引用
 // lib.js
-var counter = 3;
+https: var counter = 3;
 function incCounter() {
   counter++;
 }
