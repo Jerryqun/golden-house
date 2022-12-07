@@ -41,6 +41,7 @@ falls down  摔倒
 in essence 本质上
 abstract 抽象的
 directly 直接的
+directory 目录
 recommended 建议
 Kill 杀死
 pagation 分页
@@ -54,4 +55,6 @@ buffer 缓冲
 abort 中止
 suspense 悬念
 optimized 优化
+notify 通知
+major 重大的
  
