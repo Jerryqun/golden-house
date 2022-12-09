@@ -57,4 +57,11 @@ suspense 悬念
 optimized 优化
 notify 通知
 major 重大的
- 
+logic 逻辑
+signature 签名
+fatal 致命的
+expired 已到期
+spring 春天
+horizontal 水平的
+vertical 垂直的
+
