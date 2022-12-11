@@ -64,4 +64,5 @@ expired 已到期
 spring 春天
 horizontal 水平的
 vertical 垂直的
-
+declare 宣布
+never 绝不
