@@ -1,0 +1,2 @@
+document.getElementById 获取动态dom
+document.querySelector 获取静态dom

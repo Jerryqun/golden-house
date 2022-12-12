@@ -1,6 +1,6 @@
 /**
  * ArrayObject.slice(start,end)   start-开始截取的下标  end-结束截取的下标(截取出来后不包含end)
- * 返回新数组 不糊改变原数据
+ * 返回新数组 不改变原数据
  * ArrayObject.slice(Array)   删除Array中的值
  */
 var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
