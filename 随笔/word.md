@@ -67,3 +67,4 @@ vertical 垂直的
 declare 宣布
 never 绝不
 rect 矩形
+appear 出现
