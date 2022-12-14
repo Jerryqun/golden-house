@@ -1,0 +1,218 @@
+https://fe.ecool.fun/topic/983ff108-fded-4272-96b6-24a0a20af286?orderBy=updateTime&order=desc&tagId=12
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>   
+  <style>
+    .container {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      margin: 0 auto;
+      background-color: gray;
+      overflow: hidden;
+    }
+
+    .ul-img {
+      position: absolute;
+      display: flex;
+      width: 4200px;
+      height: 400px;
+      left: 0;
+      padding: 0;
+      margin: 0;
+    }
+
+    .li-img {
+      list-style: none;
+      width: 600px;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: aquamarine;
+      font-size: 30px;
+      font-weight: 800;
+    }
+
+    /* 上一张、下一张 */
+    .prev,
+    .next {
+      position: absolute;
+      height: 400px;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+    }
+
+    .prev {
+      left: 0;
+    }
+
+    .next {
+      right: 0;
+    }
+
+    .prev span,
+    .next span {
+      display: block;
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    /* 数字切换按钮 */
+    .num-box {
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translate(-50%, 0);
+      z-index: 2;
+    }
+
+    .num-ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .num-ul li {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 9px;
+      color: #fff;
+      margin: 0 4px;
+      cursor: pointer;
+      user-select: none;
+    }
+  </style>
+  <body style="height: 2000px">
+    <div class="container">
+      <!--  图片列表  -->
+      <ul class="ul-img">
+        <li class="li-img">1</li>
+        <li class="li-img">2</li>
+        <li class="li-img">3</li>
+        <li class="li-img">4</li>
+        <li class="li-img">5</li>
+      </ul>
+
+      <!--  上一张、下一张按钮  -->
+      <div class="prev">
+        <span>&lt;</span>
+      </div>
+      <div class="next">
+        <span>&gt;</span>
+      </div>
+
+      <!-- 数字切换按钮 -->
+      <div class="num-box">
+        <ul class="num-ul">
+          <li data-index="0">1</li>
+          <li data-index="1">2</li>
+          <li data-index="2">3</li>
+          <li data-index="3">4</li>
+          <li data-index="4">5</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script>
+    // 获取元素节点
+    var containerDom = document.getElementsByClassName("container")[0]; // 容器
+    var ulDom = document.getElementsByClassName("ul-img")[0]; // 图片盒子
+    var prevDom = document.getElementsByClassName("prev")[0].firstElementChild; // 上一张按钮
+    var nextDom = document.getElementsByClassName("next")[0].firstElementChild; // 下一张按钮
+    var numUlDom = document.getElementsByClassName("num-ul")[0]; // 数字按钮父级容器
+    var numList = document
+      .getElementsByClassName("num-ul")[0]
+      .getElementsByTagName("li"); // 数字切换按钮列表
+
+    // 定义全局变量
+    var currentIndex = 0; // 当前显示的图片索引
+    var timer = null; // 自动播放定时器
+    numList[currentIndex].style.backgroundColor = "#ccc"; // 默认选中第一个数字
+    // 上一张
+    prevDom.addEventListener("click", prevFun);
+    // 下一张
+    nextDom.addEventListener("click", nextFun);
+    // 鼠标移入容器，停止自动播放
+    containerDom.addEventListener("mouseenter", stopAutoPlay);
+    // 鼠标移出容器，开启自动播放
+    containerDom.addEventListener("mouseleave", autoPlay);
+    // 数字按钮点击事件
+    numUlDom.addEventListener("click", numClick);
+
+    // 开启自动播放
+    autoPlay();
+
+    // 切换上一张
+    function prevFun() {
+      ulDom.style.transition = "0.5s";
+      numList[currentIndex].style.backgroundColor = ""; // 清空上一个按钮的样式
+      if (currentIndex === 0) {
+        ulDom.style.transition = "0s"; // 为了实现无缝滚动，清除动画
+        currentIndex = 4;
+      } else {
+        --currentIndex;
+      }
+      ulDom.style.left = `-${currentIndex * 600}px`;
+      numList[currentIndex].style.backgroundColor = "#ccc";
+    }
+    // 切换下一张
+    function nextFun() {
+      ulDom.style.transition = "0.5s";
+      numList[currentIndex].style.backgroundColor = ""; // 清空上一个按钮的样式
+      if (currentIndex === 4) {
+        ulDom.style.transition = "0s"; // 为了实现无缝滚动，清除动画
+        currentIndex = 0; // 重新播放第一张
+      } else {
+        ++currentIndex;
+      }
+      ulDom.style.left = `-${currentIndex * 600}px`;
+      numList[currentIndex].style.backgroundColor = "#ccc"; // 设置按钮选中样式
+    }
+
+    // 数字按钮点击事件
+    function numClick(e) {
+      ulDom.style.transition = "0.5s";
+      let index = e.target.dataset.index;
+      if (index == undefined) {
+        return;
+      }
+      numList[currentIndex].style.backgroundColor = ""; // 清空上一个按钮的样式
+      currentIndex = Number(index);
+      numList[currentIndex].style.backgroundColor = "#ccc";
+      ulDom.style.left = `-${currentIndex * 600}px`;
+    }
+
+    // 循环播放
+    function autoPlay() {
+      timer = setInterval(nextFun, 2000);
+    }
+
+    // 关闭自动播放
+    function stopAutoPlay() {
+      // 清除定时器
+      clearInterval(timer);
+    }
+  </script>
+</html>
