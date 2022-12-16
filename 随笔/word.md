@@ -54,7 +54,7 @@ binary 二进制
 buffer 缓冲
 abort 中止
 suspense 悬念
-optimized 优化
+optimized  Optimization 优化
 notify 通知
 major 重大的
 logic 逻辑
@@ -68,3 +68,6 @@ declare 宣布
 never 绝不
 rect 矩形
 appear 出现
+portal 门户
+SEO（Search Engine Optimization）搜索引擎优化
+multipart 多部分
